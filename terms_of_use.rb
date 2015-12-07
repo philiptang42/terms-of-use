@@ -7,5 +7,14 @@ def disclaimer
   puts ""
 end
 
-disclaimer
+response = ""
+while response.downcase != "yes"
+  disclaimer
+  puts "Please accept the disclaimer. It is your destiny. You must. (yes/no)"
+  response = gets.chomp
+end
+
+puts ""
 puts "3 + 2 = #{rand(6)}"
+puts ""
+disclaimer
